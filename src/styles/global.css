@@ -11,15 +11,39 @@
 :root {
   --white: #fff;
   --background: #f2f3f5;
+  --bg-overlay: rgba(242, 243, 245, 0.8);
+  --bg-login: #5965e0;
   --gray-line: #dcdde0;
   --text: #666666;
   --text-highlight: #b3b9ff;
+  --text-login: #b3b9ff;
+  --text-login-button: #b3b9ff;
+  --text-home-button: #fff;
   --title: #2e384d;
   --red: #e83f5b;
   --green: #4cd62b;
   --blue: #5965e0;
   --blue-dark: #4953b8;
   --blue-twitter: #2aa9e0;
+  --countdownLineSeparation: #f0f1f3;
+  --sidebar-icon: #fff;
+}
+
+/* Dark Mode Colors */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #121212;
+    --title: #fff;
+    --white: #434343;
+    --text: #f7f7f7;
+    --text-login: #434343;
+    --text-login-button: #fff;
+    --bg-overlay: rgba(131, 131, 131, 0.8);
+    --bg-login: #121212;
+    --countdownLineSeparation: #575757;
+    --sidebar-icon: #5965e0;
+  }
 }
 
 /* Global */

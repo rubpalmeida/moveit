@@ -14,7 +14,8 @@ export function Countdown() {
     hasFinished,
     isActive,
     resetCountdown,
-    startCountdown
+    startCountdown,
+    timeProgressPercentage
   } = useContext(CountdownContext);
 
   const [minuteLeft, minuteRight] = String(minutes).padStart(2, '0').split('');
@@ -45,13 +46,16 @@ export function Countdown() {
       ) : (
           <>
             { isActive ? (
-              <button
-                type="button"
-                className={`${styles.countdownButton} ${styles.countdownButtonActive}`}
-                onClick={resetCountdown}
-              >
-                <p>Abandonar Ciclo</p> <span> <CloseIcon /> </span>
-              </button>
+              <>
+                <button
+                  type="button"
+                  className={`${styles.countdownButton} ${styles.countdownButtonActive}`}
+                  onClick={resetCountdown}
+                >
+                  <p>Abandonar Ciclo</p> <span> <CloseIcon /> </span>
+                </button>
+                <div className={styles.progress} style={{ width: `${timeProgressPercentage}%` }} />
+              </>
             ) : (
                 <button
                   type="button"

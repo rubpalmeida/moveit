@@ -1,0 +1,108 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+
+  background: var(--bg-login);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  margin: 0 10rem;
+}
+
+.loginContainer strong {
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+
+  margin: 5rem 0;
+}
+
+.login img {
+  width: 2.5rem;
+  height: 2.5rem;
+  opacity: 0.5;
+}
+
+.login p {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 21.8rem;
+}
+
+.login p span {
+  margin-left: 1rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 30px;
+  color: var(--text-login);
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.inputContainer input {
+  width: 340px;
+  height: 80px;
+
+  padding: 0 2rem;
+
+  background: linear-gradient(90deg, var(--blue-dark) 0%, var(--blue) 100%);
+  border: none;
+  border-radius: 5px 0px 0px 5px;
+
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--text-login-button);
+}
+
+.inputContainer input::placeholder {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--text-login-button);
+}
+
+.inputContainer button {
+  width: 80px;
+  height: 80px;
+
+  background: var(--blue-dark);
+  border: none;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.inputContainer button img {
+  width: 24px;
+  height: 24px;
+  color: var(--white);
+}
+
+@media (max-width: 1300px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .loginContainer {
+    position: absolute;
+  }
+}
