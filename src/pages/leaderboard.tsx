@@ -24,7 +24,7 @@ export default function Leaderboard() {
         {Array.from(Array(10).keys()).map((_, i) => (
           <UserCard
             key={i}
-            position={`# ${i + 1}`}
+            position={i + 1}
             avatar_url="https://github.com/rubpalmeida.png"
             username="rubpalmeida"
             level={Math.floor(Math.random() * 100)}
