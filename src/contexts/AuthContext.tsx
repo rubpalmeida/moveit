@@ -15,9 +15,9 @@ export function AuthPorvider({ children }: AuthPorviderProps) {
 
   return (
     <AuthContext.Provider
-      value={
+      value={{
         isAuthenticated
-      }
+      }}
     >
 
       {children}
