@@ -19,6 +19,12 @@
 - `yarn` to install the dependencies
 - `yarn dev` to run in a development environment.
 
+
+### 💻 Project.
+
+This project is hosted on Vercel in the follow [link](https://moveit-rubpalmeida.vercel.app/).
+Below are some pictures from the project, the dark theme was implemented using user preferences.
+
 <img src="./public/images/login.png">
 <img src="./public/images/home.png">
 <img src="./public/images/countdown.png">
@@ -26,12 +32,9 @@
 <img src="./public/images/levelup.png">
 <img src="./public/images/leaderboard.png">
 
-- Subindo de nivel
 
-
-
-### 📈 Como contribuir?
-- Fork este repositório;
-- Crie uma branch com sua feature: `git checkout -b my-feature`
-- Commit as mudanças: `git commit -m 'feat: My new feature'`
+### 📈 how to contribute?
+- Fork this repo;
+- Create a branch with your feature: `git checkout -b my-feature`
+- Commit the chagens: `git commit -m 'feat: My new feature'`
 - Push branch: `git push origin my-feature`
