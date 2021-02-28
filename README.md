@@ -22,14 +22,19 @@
 
 ### 💻 Project.
 
-This project is hosted on Vercel in the follow [link](https://moveit-rubpalmeida.vercel.app/).
+This project is hosted on Vercel at the following [link](https://moveit-rubpalmeida.vercel.app/).
 Below are some pictures from the project, the dark theme was implemented using user preferences.
 
 <img src="./public/images/login.png">
+<hr>
 <img src="./public/images/home.png">
+<hr>
 <img src="./public/images/countdown.png">
+<hr>
 <img src="./public/images/challenge.png">
+<hr>
 <img src="./public/images/levelup.png">
+<hr>
 <img src="./public/images/leaderboard.png">
 
 
