@@ -35,8 +35,6 @@ export function CountdownProvider({ children }: CountdownProviderProps) {
 
   const timeProgressPercentage = Math.floor((timeUp * 100) / initialTime);
 
-  console.log(timeProgressPercentage)
-
   function startCountdown() {
     setisActive(true);
   }

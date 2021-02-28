@@ -64,6 +64,7 @@
 
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .userCardInformation div > div p {
@@ -86,5 +87,5 @@
 
 .userCardChallenges span,
 .userCardExperience span {
-  color: var(--orange);
+  color: var(--blue);
 }

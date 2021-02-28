@@ -15,18 +15,13 @@
 
   background: var(--blue);
 
-  transition: width 600ms ease;
+  transition: width 0.1s ease;
 
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
 }
 
 .sideBarContainer img {
   width: 5rem;
-}
-
-.sideBarContainer path {
-  width: 5rem;
-  fill: white;
 }
 
 .sideBarContainer ul {
@@ -66,16 +61,18 @@
   fill: white;
 }
 
-.sideBarContainer > svg {
+.sideBarContainer p {
   width: 7rem;
-  height: 2.5rem;
+  height: 4.5rem;
 
-  fill: white;
-
-  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: white;
 }
 
-.sideBarContainer > svg:hover {
+.sideBarContainer p:hover {
   border-left: 3px solid white;
 }
 
@@ -102,8 +99,9 @@
     border-bottom: 3px solid white;
   }
 
-  .sideBarContainer > svg:hover {
+  .sideBarContainer p:hover {
     height: 4rem;
     border-left: 0;
+    border-bottom: 3px solid white;
   }
 }

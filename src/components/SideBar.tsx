@@ -2,6 +2,7 @@
 import Link from 'next/link';
 
 import { useRouter } from 'next/router';
+import React from 'react';
 
 import { BiHome, BiMedal, BiLogOut } from 'react-icons/bi';
 
@@ -21,23 +22,16 @@ export function SideBar() {
       <div className={styles.logo}>
         <img src="/icons/logo.svg" alt="Logo" />
       </div>
-
       <ul>
         <li className={isActive('/')}>
-          <Link href="/">
-            <BiHome />
-          </Link>
+          <a href="/"><BiHome /></a>
         </li>
         <li className={isActive('/leaderboard')}>
-          <Link href="/leaderboard">
-            <BiMedal />
-          </Link>
+          <a href="/leaderboard"><BiMedal /></a>
         </li>
       </ul>
 
-      <Link href="/logout">
-        <BiLogOut />
-      </Link>
+      <p><a href="/logout"><BiLogOut /></a></p>
     </div>
   );
 }
